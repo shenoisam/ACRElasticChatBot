@@ -3,3 +3,4 @@ err.csv
 out.txt
 __pycache__
 .env
+ner

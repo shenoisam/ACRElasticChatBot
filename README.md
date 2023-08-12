@@ -21,7 +21,7 @@ source venv bin activate
 3. Install dependencies
 `pip3 install -r requirements.txt`
 
-4. Create a file called .env in this directory. Copy and paste the following information into the file. Replace your elasticsearch password with the password you create in the next step. 
+4. Create a file called .env in this directory. Copy and paste the following information into the file. Replace <your elasticsearch password> with the password you create in the next step.
 ```
 USER=elastic
 PASSWORD=<your elasticsearch password>

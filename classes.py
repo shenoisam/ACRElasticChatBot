@@ -47,7 +47,6 @@ class Elastic:
         cc = de.extract_chief_complaint(query)
 
         cc_u = cc[1:]
-        print(cc)
         query_obj = {
 
                 "query_string": {
@@ -57,8 +56,7 @@ class Elastic:
         }
 
         resp = self.es.search(index="test-index", query=query_obj)
-        print("Got %d Hits:" % resp['hits']['total']['value'])
-        print(resp['hits']["hits"][0])
+        return resp['hits']["hits"][0]
 
 
 
