@@ -7,9 +7,11 @@ import json
 import os
 from elasticsearch import Elasticsearch
 import ssl
+
+
 class Elastic:
     def __init__(self):
-        self.es = Elasticsearch("http://localhost:9200",  basic_auth=("elastic", "AutoBCT2022!"))
+        self.es = Elasticsearch("http://localhost:9200",  basic_auth=(os.environ.get("USER"),os.environ.get("PASSWORD")))
 
     def genMultiMatchObj(self,query,fields,type,boost):
         obj = {

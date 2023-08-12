@@ -8,7 +8,9 @@ import re
 import json
 import os
 import argparse
+from dotenv import load_dotenv
 
+load_dotenv()  # take environment variables from .env.
 from classes import Elastic
 
 if __name__ == "__main__":

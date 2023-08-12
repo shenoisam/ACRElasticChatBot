@@ -2,3 +2,4 @@ dumbvenv
 err.csv
 out.txt
 __pycache__
+.env

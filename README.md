@@ -21,16 +21,22 @@ source venv bin activate
 3. Install dependencies
 `pip3 install -r requirements.txt`
 
-4. Set up elasticsearch. Refer to this article (https://medium.com/@bananachiptech/how-to-set-up-a-elasticsearch-on-mac-f21a2c9d0b1f)
+4. Create a file called .env in this directory. Copy and paste the following information into the file. Replace your elasticsearch password with the password you create in the next step. 
+```
+USER=elastic
+PASSWORD=<your elasticsearch password>
+```
 
-5. Download the data from (https://docs.google.com/document/d/13ZvdI1auJl3UN16kHwm-wS08MjWEGlI4DCN3dRx81FM/edit?usp=share_link). Be sure to download it as a txt file and copy it into this folder. We named it out.txt.
+5. Set up elasticsearch. Refer to this article (https://medium.com/@bananachiptech/how-to-set-up-a-elasticsearch-on-mac-f21a2c9d0b1f)
 
-6. Run the following command to load the data into elasticsearch. Make sure that your elastic search instance is running!
+6. Download the data from (https://docs.google.com/document/d/13ZvdI1auJl3UN16kHwm-wS08MjWEGlI4DCN3dRx81FM/edit?usp=share_link). Be sure to download it as a txt file and copy it into this folder. We named it out.txt.
+
+7. Run the following command to load the data into elasticsearch. Make sure that your elastic search instance is running!
 ```
 python3 main.py --load_data out.txt
 ```
 
-7. Now you can run the program! Use the following command to run.
+8. Now you can run the program! Use the following command to run.
 `python3 main.py`
 You can provide different prompts to the program by running the following command in your terminal
 `python3 main.py --prompt "<your prompt here>"`
