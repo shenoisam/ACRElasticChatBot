@@ -4,6 +4,8 @@ from spacy.util import minibatch, compounding
 from pathlib import Path
 from spacy.training.example import Example
 
+# Adapted from: https://www.machinelearningplus.com/nlp/training-custom-ner-model-in-spacy/
+
 TRAIN_DATA = [
     ("CT imaging is used to assess the patient.", {"entities": [(0, 2, "IMAGING")]}),
     ("Ultrasound imaging is used to assess the patient.", {"entities": [(0, 18, "IMAGING")]}),
